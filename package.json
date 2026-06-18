@@ -1,0 +1,30 @@
+{
+  "name": "dein_repo",
+  "version": "1.0.0",
+  "description": "> **Ziel:** Git initialisieren, mit GitHub verbinden und einen\r > vollständigen Git-Workflow einrichten\r >\r > **Voraussetzungen:** GitHub-Account ✓ | VS Code ✓ | Projektstruktur ✓",
+  "main": "app.js",
+  "scripts": {
+    "lint:js": "eslint app.js",
+    "lint:html": "htmlhint index.html",
+    "lint": "npm run lint:js && npm run lint:html",
+    "start": "npx http-server . -p 3000 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joachimharms/dein_repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/joachimharms/dein_repo/issues"
+  },
+  "homepage": "https://github.com/joachimharms/dein_repo#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.5.0",
+    "globals": "^17.6.0",
+    "htmlhint": "^1.9.2"
+  }
+}
