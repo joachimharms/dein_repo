@@ -11,7 +11,7 @@ function getRandomMessage() {
 }
 
 function updateStatus() {
-    const el = document.getElementById('status-text');
+    const el = document.ggetElementById('status-text');
     if (el) {
         el.textContent = getRandomMessage();
     }
