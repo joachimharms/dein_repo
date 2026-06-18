@@ -7,6 +7,8 @@
     "lint:js": "eslint app.js",
     "lint:html": "htmlhint index.html",
     "lint": "npm run lint:js && npm run lint:html",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
     "start": "npx http-server . -p 3000 -o"
   },
   "repository": {
@@ -25,6 +27,7 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.5.0",
     "globals": "^17.6.0",
-    "htmlhint": "^1.9.2"
+    "htmlhint": "^1.9.2",
+    "jest": "^30.4.2"
   }
 }
