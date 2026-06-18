@@ -4,12 +4,15 @@
   "description": "> **Ziel:** Git initialisieren, mit GitHub verbinden und einen\r > vollständigen Git-Workflow einrichten\r >\r > **Voraussetzungen:** GitHub-Account ✓ | VS Code ✓ | Projektstruktur ✓",
   "main": "app.js",
   "scripts": {
-    "lint:js": "eslint app.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint app.js app.cjs",
     "lint:html": "htmlhint index.html",
     "lint": "npm run lint:js && npm run lint:html",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "start": "npx http-server . -p 3000 -o"
+    "test:ci": "jest --ci --coverage --coverageReporters=text --coverageReporters=lcov",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,10 @@
     "eslint": "^10.5.0",
     "globals": "^17.6.0",
     "htmlhint": "^1.9.2",
-    "jest": "^30.4.2"
+    "jest": "^30.4.2",
+    "vite": "^8.0.16"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.1"
   }
 }
