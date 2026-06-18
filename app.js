@@ -24,7 +24,7 @@ function updateStatus() {
 // [^\s@]+              Wieder: ein oder mehr Zeichen ohne Leerzeichen und ohne @
 // \.                   Ein echter Punkt (ohne \ wäre . ein Platzhalter für beliebige Zeichen)
 // [^\s@]+              Nochmal: ein oder mehr Zeichen ohne Leerzeichen und ohne @$Ende des Strings
-function validateEmail(email) {
+function validateEmail(email {
     if (!email || typeof email !== 'string') return false;
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
