@@ -32,7 +32,7 @@
     "globals": "^17.6.0",
     "htmlhint": "^1.9.2",
     "jest": "^30.4.2",
-    "vite": "^8.0.16"
+    "vite": "^8.1.0"
   },
   "dependencies": {
     "esbuild": "^0.28.1"
